@@ -1,0 +1,511 @@
+*{
+    padding:0%;
+    margin: 0%;
+    font-family: "Inter", sans-serif;
+    letter-spacing:2px;
+}
+nav{
+    z-index: 5000 !important;
+}
+
+.cont{
+    width: 100vw !important;
+    height: 100vh !important;
+    scroll-snap-type: y mandatory !important;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+   
+
+}
+section{
+    scroll-snap-align:start !important ;
+    height: 100vh;
+    width: 100vw ;
+    background-color: white;
+    overflow-x:hidden  ;
+}
+/* navbar styling */
+.navbar{
+    background-color: rgba(255, 255, 255, 0)!important;
+    padding-right: 12%  !important;
+    padding-left: 12% !important;
+    z-index: 1;
+}
+.navbar-brand{
+  margin-right: 2%;
+
+}
+.btn.btn-dark{
+    border-radius: 5% !important;
+    padding: 14px !important;
+
+}
+.nav-link{
+    font-weight: 700 !important;
+    font-family: "Inter", sans-serif;
+    font-size: 16pt !important;
+    color: #000000 !important;
+    white-space: nowrap;
+    
+}
+.nav-item{
+    margin-right: 5% !important;
+}
+.nav-link:hover{
+    color: #FF5555 !important;
+}
+
+/* hero section css */
+#hero{
+    height: 100vh ;
+    width: 100vw;
+    position:sticky;
+    top: 0 !important;
+    left: 0;
+    z-index: -100;
+   
+}
+
+@keyframes fade-out {
+    from {
+        transform: translateY(100%);
+         opacity: 1;
+    }
+    to{
+        transform: translateY(-100%);
+         opacity: 0;}
+}
+
+.anim {
+    opacity: 0; /* Initially hidden */
+    animation: slide-in-right 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%); /* Start from outside the viewport on the right */
+    }
+    to {
+      transform: translateX(0); /* Animate to the original position */
+      opacity: 1; /* Become visible at the end */
+    }
+  }
+  
+
+
+/* positioning the stars in the hero section */
+#mob11{
+    position: absolute;
+    right: 0%;
+    top: 4%;
+   
+    padding: 0;
+    margin: 0;
+}
+#star12{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+#gradient11{
+    position: absolute;
+    z-index: -1;
+    left: 20%;
+}
+#gradient12{
+    position: absolute;
+    z-index: -1;
+    left: 60%; 
+}
+#a{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+#hero .text{
+position: relative;
+top: 18%;
+left: 13%;
+}
+#hero .text h1{
+    font-family: "REM", sans-serif;
+    font-weight: 900;
+    font-size: 50pt;
+    line-height :1.5;
+}
+#hero .text h5{
+    color: #808080;
+}
+#hero button{
+    margin-top: 1%;
+}
+#watch{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    margin-left: 3%;
+}
+
+
+/* SECTION 2 CSS */
+#features{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+#features img.p4{
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+#star21{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+#gradient21{
+    position: absolute;
+    left: 3%;
+    top: 8%;
+    z-index: -1;
+
+}
+#gradient22{
+    position: absolute;
+    top:28%;
+    right: 0%;
+  
+}
+#features .text{
+    margin-top: 12%;
+}
+#features h6{
+    color: #FF5555;
+}
+#features h1{
+    font-weight: 900;
+}
+#features h5{
+    font-weight: 600;
+    margin-top: 5%;
+}
+#features p{
+    color: #808080;
+    font-weight: 500;
+}
+
+
+/* SECTION 3 */
+#gradient31{
+    position: absolute;
+    left:50%;
+    top:35%;
+}
+#star31{
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}
+#advantage{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10px;
+    padding-top: 4%;
+    padding-left: 13%;
+}
+#advantage h6{
+    color: #FF5555;
+}
+#advantage h1{
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+#advantage h5{
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+#advantage p{
+    color: #808080;
+    font-weight: 500;
+}
+
+#advantage .text{
+    margin-top: 15%;
+}
+#next-but{
+  
+    z-index: 3;
+    border: none;
+    background-color: white;
+   
+}
+#prev-but{
+    border: none;
+    background-color: white;
+   z-index: 3;
+}
+#carousel3{
+    display: inline-block !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.controlss{
+    position: absolute !important;
+    top: 40vh;
+    left: 45%;
+}
+
+
+/* SECTION 4 */
+
+#testimonials{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    padding-top:6% ;
+    max-height: 100vh !important;
+  
+}
+#testimonials div.d-flex.flex-col.flex-md-row{
+    overflow-y: clip;
+}
+#testimonials h1{
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 0;
+    line-height: normal;
+}
+#testimonials h6{
+    text-align: center;
+}
+#testimonials h5{
+    margin-top: 15% !important;
+}
+#testimonials h2{
+    margin-bottom: 5%;
+    font-weight: 700;
+}
+#testimonials p{
+    color: #808080;
+    font-weight: 500;
+}
+#testimonial1{
+
+   position: relative;
+   top: -130px;
+   left:5px;
+   clip-path: polygon(0 0, 100% 0%, 100% 91%, 0 91%);
+}
+#testimonials .text{
+    padding-top: 5%;
+    padding-left: 7% ;
+   
+}
+
+#testimonials .carousel-indicators{
+   
+    position:absolute  !important;
+    left:-20vw !important;
+    top: 38vh  !important;
+    max-height: 40px!important;
+    transition: 0s!important;
+  }
+#testimonials .carousel-indicators button {
+    background-color:white !important;
+    border: none !important; /* Remove borders */
+   
+    max-height: 30px !important; /* Set desired indicator height */
+   text-indent: 0  !important;
+   margin: 10px !important;
+  }
+#testimonials .carousel-inner {
+    transition: none !important; /* Remove slide transition */
+  }
+  
+  #testimonials .carousel-item {
+    transition: none !important; /* Remove slide transition */
+    transform: none !important; /* Remove slide animation */
+  }
+  #gradient41{
+    position: absolute;
+    top: 30%;
+  }
+  #star41{
+    position: absolute;
+    top: 93%;
+  }
+
+
+
+ 
+
+
+  /* SECTION 5 CSS */
+  #faq{
+    position: sticky;
+    top: 0;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #faq h1{
+    font-weight: 900;
+  }
+  #faq h6{
+    color: #FF5555;
+    font-weight: 300;
+  }
+  #faq h3{
+    font-size: 20pt;
+    font-weight: 700;
+  }
+
+  #faq p{
+    font-size: smaller;
+  }
+  #faq .orange{
+    background-color: #FF5555;
+    color: white;
+    padding: 1%;
+    padding-right: 5%;
+    display: inline-block  !important;
+    width: fit-content !important;
+    border-radius: 3%;
+    margin-left: 3%;
+  }
+  #faq .white{
+    display: inline-block  !important;
+    width: fit-content !important;
+    padding: 1%;
+    padding-right: 5%;
+    margin-left: 3%;
+  }
+
+
+  /* SECTION 6 CSS */
+#foot{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+padding-top: 6%;
+padding-left: 10%;
+padding-right: 5%;
+}
+#foot .imgs img{
+position: absolute;
+z-index: -1;
+top:13vh;
+transform: scale(0.9);
+   
+}
+
+#foot .imgs>.text{
+    color: white;
+    margin-top: 100px !important ;
+   
+    margin-left: 100px !important;
+    transform: scale(0.9);
+}
+li{
+    list-style: none;
+}
+#foot .container{
+    margin-top: 17% !important;
+    
+}
+#foot .container a{
+    text-decoration: none;
+    color: #000000;
+}
+#foot h1{
+    font-weight: 900;
+}
+#foot h5{
+    font-weight: 600;
+}
+@media only screen and (max-width: 1441px) {
+    /* for section 1 */
+    #hero .text{
+     left: 8.5%;
+    }
+    #mob11{
+     top:2%;
+     right: -1%;
+     transform: scale(0.95);
+    }
+    /* for section 3 */
+    #advantage{
+       max-height: 100vh !important;
+    }
+    #advantage .text{
+        margin-top: 7%;
+    }
+    #advantage p{
+        font-size: 14pt;
+    }
+    #carousel2{
+        height: 600px;
+    }
+    /* section 4 */
+    #testimonials .text{
+        padding-top: 2% !important;
+    }
+    #testimonials .carousel-indicators{
+        top: 38vh!important;
+        
+    }
+    #testimonials .carousel-indicators button {
+        margin-top: 40px  !important;
+    }
+    
+   }
+   @media only screen and (max-width: 1025px) {
+    /* for section 1 */
+    #hero .text {
+    left: -4% !important;
+     transform: scale(0.75);
+    }
+    #mob11{
+     top:2%;
+     right: -18% !important;
+     transform: scale(0.75);
+    }
+    /* for section 2 */
+    #features img.p4{
+        margin-left: 2%;
+    }
+    #features .text{
+        transform: scale(0.75);
+        margin-top: 7%;
+    }
+    /* for section 3 */
+    #advantage{
+      max-height: 100vh !important;
+        padding-top: 4%;
+        padding-left: 3%;
+       
+    }
+   
+    #gradient31{
+        visibility: hidden;
+    }
+    #advantage .imgs{
+        transform: scale(0.75);
+    }
+    #carousel1{
+        transform: scale(0.75);
+    }
+   
+
+    /* section 4 */
+    #testimonials .text{
+        padding-top: 2% !important;
+    }
+    #testimonials .carousel-indicators{
+        top: 38vh!important;
+        
+    }
+    #testimonials .carousel-indicators button {
+        margin-top: 40px  !important;
+    }
+    
+   }
